@@ -1,0 +1,14 @@
+import urllib2
+import json
+
+pounds = input("amount you wish to exchange: ")
+url = "http://rate-exchange.appspot.com/currency?from=GBP&to=EUR"
+
+response = urllib2.urlopen(url).read()
+data = json.loads(response.decode('utf8'))
+
+print data
+
+rates = data ['rate']
+total = pounds * rates
+print total
