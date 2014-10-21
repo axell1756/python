@@ -1,15 +1,22 @@
+oi = input("Enter Opening Inventories: ")
+p = input("Enter Purchases: ")
+ci = input("Enter Closing Inventories: ")
+sr = input("Enter Sales Revenue: ")
 
-def cost_of_sales(oi, p, ci):
-    oi = input("Enter Opening Inventories: ")
-    p = input("Enter Purchases: ")
-    ci = input("Enter Closing Inventories: ")
+result_cos = oi + p - ci
+cos = result_cos
+result_gp = sr - cos
 
-    result_cos = oi + p - ci
 
-    if result_cos < 0:
-        result_cos = -result_cos
-        
+def cos(oi, p, ci):
+    oi
+    p
+    ci
     print result_cos
-    
-cost_of_sales(0, 0, 0)
 
+def gp(sr, cos):
+    print result_gp
+
+
+cos(0, 0, 0)
+gp(0, 0)
