@@ -22,7 +22,10 @@ print list1
 print "list.remove(x)"
 list1.remove(5)
 print list1
-print ""
+print "len(list)"
 print len(list1)
-print ""
+print "list.count(x)"
 print list1.count(1)
+del list1[:]
+print "del list[:]"
+print list1
